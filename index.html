@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="متجر يمن بلس - إلكترونيات، مستلزمات المنزل، أدوات، وإكسسوارات مع سهولة التواصل والطلب عبر واتساب.">
+  <meta name="theme-color" content="#0756b8">
+  <title>متجر يمن بلس | كل ما تحتاجه في مكان واحد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="top-contact">
+        <a href="https://wa.me/967772459459" target="_blank" rel="noopener">◉ واتساب: +967 772 459 459</a>
+        <a href="mailto:abduallatif772@gmail.com">✉ abduallatif772@gmail.com</a>
+      </div>
+      <span>تسوّق بسهولة • خيارات متنوعة • تواصل مباشر</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="#" aria-label="متجر يمن بلس - الصفحة الرئيسية">
+        <span class="brand-icon">＋🛒</span>
+        <span><strong>متجر يمن بلس</strong><small>YEMEN PLUS</small></span>
+      </a>
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="ابحث عن منتجك المفضل..." aria-label="ابحث عن منتج">
+        <button type="submit" aria-label="بحث">⌕</button>
+      </form>
+      <div class="header-actions">
+        <a href="#products" class="account-link">تصفح المنتجات</a>
+        <button class="cart-trigger" id="openCart" aria-label="فتح سلة التسوق">🛒 <span>السلة</span><b id="cartCount">0</b></button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="active" href="#">الرئيسية</a>
+        <a href="#categories">الأقسام</a>
+        <a href="#products">جميع المنتجات</a>
+        <a href="#offers">العروض</a>
+        <a href="#about">لماذا يمن بلس؟</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">أهلاً بك في يمن بلس</span>
+          <h1>كل ما تحتاجه<br><em>في مكان واحد</em></h1>
+          <p>اكتشف مجموعة مختارة من الإلكترونيات ومستلزمات المنزل والإكسسوارات والأدوات اليومية، وتسوق بطريقة سهلة ومريحة.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#products">تسوّق الآن <span>←</span></a>
+            <a class="btn btn-outline" href="https://wa.me/967772459459" target="_blank" rel="noopener">اسألنا عبر واتساب</a>
+          </div>
+          <div class="hero-points"><span>✓ منتجات متنوعة</span><span>✓ طلب سهل</span><span>✓ تواصل مباشر</span></div>
+        </div>
+        <div class="hero-visual" aria-label="مجموعة من المنتجات الإلكترونية والمنزلية">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="visual-label label-top">اختيارات تناسبك</div>
+          <div class="product-scene">
+            <div class="scene-card laptop">💻<small>إلكترونيات</small></div>
+            <div class="scene-card headphones">🎧</div>
+            <div class="scene-card speaker">🔊</div>
+            <div class="scene-card home">☕<small>للمنزل</small></div>
+            <div class="scene-card phone">📱</div>
+          </div>
+          <div class="visual-label label-bottom"><strong>YEMEN PLUS</strong><small>تسوق أذكى كل يوم</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container categories-section" id="categories">
+      <div class="section-heading">
+        <div><span class="section-kicker">تسوق حسب احتياجك</span><h2>الأقسام الرئيسية</h2></div>
+        <p>اعثر على ما تبحث عنه بسهولة</p>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card selected" data-category="الكل"><span class="category-icon">▦</span><strong>جميع المنتجات</strong><small>تصفح المتجر</small></button>
+        <button class="category-card" data-category="الإلكترونيات"><span class="category-icon">💻</span><strong>الإلكترونيات</strong><small>أجهزة وملحقات</small></button>
+        <button class="category-card" data-category="المنزل والمطبخ"><span class="category-icon">🏠</span><strong>المنزل والمطبخ</strong><small>راحة كل يوم</small></button>
+        <button class="category-card" data-category="مستلزمات شخصية"><span class="category-icon">⌚</span><strong>مستلزمات شخصية</strong><small>أناقة وعناية</small></button>
+        <button class="category-card" data-category="الأدوات والمعدات"><span class="category-icon">🛠️</span><strong>الأدوات والمعدات</strong><small>للاستخدام اليومي</small></button>
+        <button class="category-card" data-category="الألعاب والترفيه"><span class="category-icon">🎮</span><strong>الألعاب والترفيه</strong><small>متعة للجميع</small></button>
+        <button class="category-card" data-category="إكسسوارات"><span class="category-icon">🎒</span><strong>إكسسوارات</strong><small>تفاصيل مميزة</small></button>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <div class="benefit"><span>🚚</span><div><strong>تواصل بشأن التوصيل</strong><small>اسألنا عن مناطق ورسوم التوصيل</small></div></div>
+        <div class="benefit"><span>🔒</span><div><strong>طلب واضح ومباشر</strong><small>أكد تفاصيل طلبك قبل الشراء</small></div></div>
+        <div class="benefit"><span>💬</span><div><strong>دعم عبر واتساب</strong><small>تواصل معنا للاستفسارات</small></div></div>
+        <div class="benefit"><span>✨</span><div><strong>خيارات متنوعة</strong><small>منتجات لاحتياجات مختلفة</small></div></div>
+      </div>
+    </section>
+
+    <section class="container products-section" id="products">
+      <div class="section-heading products-heading">
+        <div><span class="section-kicker">اكتشف اختياراتنا</span><h2 id="productsTitle">منتجات مختارة لك</h2></div>
+        <div class="product-tools">
+          <label for="sortSelect">ترتيب حسب</label>
+          <select id="sortSelect"><option value="featured">الأكثر ملاءمة</option><option value="price-asc">السعر: الأقل أولاً</option><option value="price-desc">السعر: الأعلى أولاً</option><option value="name">الاسم</option></select>
+        </div>
+      </div>
+      <div class="active-filter" id="activeFilter" hidden></div>
+      <div class="products-grid" id="productsGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>لم نعثر على منتجات مطابقة</h3><p>جرّب كلمة بحث أخرى أو اختر قسماً مختلفاً.</p><button class="btn btn-primary" id="resetFilters">عرض كل المنتجات</button></div>
+      <p class="demo-note">ملاحظة: المنتجات والأسعار المعروضة أمثلة تجريبية قابلة للتعديل من ملف <code>script.js</code>.</p>
+    </section>
+
+    <section class="offers-section" id="offers">
+      <div class="container offer-banner">
+        <div><span class="section-kicker">تسوق على طريقتك</span><h2>اكتشف منتجات تضيف<br>قيمة ليومك</h2><p>اختر المنتجات التي تناسبك وأرسل طلبك مباشرة عبر واتساب.</p><a class="btn btn-light" href="#products">استكشف المنتجات ←</a></div>
+        <div class="offer-art"><span>🎧</span><span>📱</span><span>☕</span><span>⌚</span><div>Y+</div></div>
+      </div>
+    </section>
+
+    <section class="container about-section" id="about">
+      <div class="about-intro"><span class="section-kicker">لماذا متجر يمن بلس؟</span><h2>تجربة تسوق بسيطة وواضحة</h2><p>نهدف إلى جمع منتجات متنوعة في واجهة سهلة الاستخدام، مع إمكانية الاستفسار عن التفاصيل والتوفر والتوصيل قبل تأكيد الطلب.</p></div>
+      <div class="about-cards"><article><span>01</span><h3>تصفح بسهولة</h3><p>انتقل بين الأقسام وابحث عن المنتجات بسرعة.</p></article><article><span>02</span><h3>أضف إلى السلة</h3><p>اجمع المنتجات التي ترغب بها وحدد الكميات.</p></article><article><span>03</span><h3>أرسل طلبك</h3><p>أرسل تفاصيل السلة إلى واتساب لمراجعة الطلب.</p></article></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div><span class="section-kicker">نحن هنا لمساعدتك</span><h2>هل لديك سؤال؟<br>تواصل معنا</h2><p>للاستفسار عن المنتجات أو الأسعار أو التوصيل، يسعدنا تواصلك معنا.</p></div>
+        <div class="contact-methods">
+          <a class="contact-method" href="https://wa.me/967772459459" target="_blank" rel="noopener"><span>◉</span><div><small>راسلنا عبر واتساب</small><strong dir="ltr">+967 772 459 459</strong></div><b>←</b></a>
+          <a class="contact-method" href="mailto:abduallatif772@gmail.com"><span>✉</span><div><small>راسلنا عبر البريد الإلكتروني</small><strong>abduallatif772@gmail.com</strong></div><b>←</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand brand-light" href="#"><span class="brand-icon">＋🛒</span><span><strong>متجر يمن بلس</strong><small>YEMEN PLUS</small></span></a><p>اختياراتك الأفضل، في مكان واحد.</p></div>
+      <div><h3>روابط سريعة</h3><a href="#">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">المنتجات</a><a href="#offers">العروض</a></div>
+      <div><h3>الأقسام</h3><a href="#products" data-footer-category="الإلكترونيات">الإلكترونيات</a><a href="#products" data-footer-category="المنزل والمطبخ">المنزل والمطبخ</a><a href="#products" data-footer-category="مستلزمات شخصية">مستلزمات شخصية</a><a href="#products" data-footer-category="إكسسوارات">إكسسوارات</a></div>
+      <div><h3>تواصل معنا</h3><a href="https://wa.me/967772459459" target="_blank" rel="noopener">واتساب: +967772459459</a><a href="mailto:abduallatif772@gmail.com">البريد الإلكتروني</a><span>اليمن</span></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> متجر يمن بلس. جميع الحقوق محفوظة.</span><span>صُمم بحب لتجربة تسوق أسهل</span></div></div>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة التسوق" aria-hidden="true">
+    <div class="cart-head"><div><span class="section-kicker">طلبك القادم</span><h2>سلة التسوق</h2></div><button id="closeCart" class="close-cart" aria-label="إغلاق السلة">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🛒</span><h3>سلتك فارغة حالياً</h3><p>أضف المنتجات التي أعجبتك لتظهر هنا.</p></div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="cart-total"><span>إجمالي المنتجات (تقديري)</span><strong id="cartTotal">0 ر.ي</strong></div>
+      <p>سيتم تأكيد التوفر والتكلفة النهائية والتوصيل عبر واتساب.</p>
+      <button class="btn btn-primary checkout-btn" id="checkoutBtn">إرسال الطلب عبر واتساب ↗</button>
+      <button class="clear-cart" id="clearCart">إفراغ السلة</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
